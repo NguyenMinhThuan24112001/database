@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="NodeList/DBNDatabaseObject">
+		<column name="Name" visible="true" order="0" width="115"/>
+	</item>
+	<item id="NodeList/DBNRoot/DataSourceDescriptor">
+		<column name="Name" visible="true" order="0" width="207"/>
+		<column name="Description" visible="true" order="1" width="74"/>
+		<column name="Origin" visible="true" order="2" width="47"/>
+		<column name="Driver Type" visible="true" order="3" width="73"/>
+	</item>
+	<item id="NodeList/MySQLCatalog">
+		<column name="Schema Name" visible="true" order="0" width="98"/>
+		<column name="Default Charset" visible="true" order="1" width="95"/>
+		<column name="Default Collation" visible="true" order="2" width="103"/>
+		<column name="SQL Path" visible="true" order="3" width="62"/>
+		<column name="Database size" visible="true" order="4" width="84"/>
+	</item>
+	<item id="NodeList/MySQLInformation/DBNDatabaseFolder">
+		<column name="Name" visible="true" order="0" width="115"/>
+	</item>
+	<item id="NodeList/MySQLTable">
+		<column name="Table Name" visible="true" order="0" width="100"/>
+		<column name="Engine" visible="true" order="1" width="100"/>
+		<column name="Auto Increment" visible="true" order="2" width="100"/>
+		<column name="Data Length" visible="true" order="3" width="100"/>
+		<column name="Description" visible="true" order="4" width="100"/>
+	</item>
+	<item id="NodeList/MySQLTableColumn">
+		<column name="Column Name" visible="true" order="0" width="92"/>
+		<column name="#" visible="true" order="1" width="27"/>
+		<column name="Data Type" visible="true" order="2" width="73"/>
+		<column name="Not Null" visible="true" order="3" width="59"/>
+		<column name="Auto Increment" visible="true" order="4" width="97"/>
+		<column name="Key" visible="true" order="5" width="33"/>
+		<column name="Default" visible="true" order="6" width="52"/>
+		<column name="Extra" visible="true" order="7" width="40"/>
+		<column name="Expression" visible="true" order="8" width="70"/>
+		<column name="Comment" visible="true" order="9" width="68"/>
+	</item>
+	<item id="NodeList/MySQLTableForeignKeyColumn">
+		<column name="Column" visible="true" order="0" width="57"/>
+		<column name="Reference Column" visible="true" order="1" width="112"/>
+	</item>
+	<item id="NodeList/MySQLTableIndex">
+		<column name="Index Name" visible="true" order="0" width="100"/>
+		<column name="Table" visible="true" order="1" width="100"/>
+		<column name="Index Type" visible="true" order="2" width="100"/>
+		<column name="Unique" visible="true" order="3" width="100"/>
+		<column name="Cardinality" visible="true" order="4" width="100"/>
+		<column name="Comment" visible="true" order="5" width="100"/>
+	</item>
+	<item id="NodeList/MySQLTrigger">
+		<column name="Trigger Name" visible="true" order="0" width="100"/>
+		<column name="Timing" visible="true" order="1" width="100"/>
+		<column name="Type" visible="true" order="2" width="100"/>
+		<column name="Table" visible="true" order="3" width="100"/>
+		<column name="Trigger Description" visible="true" order="4" width="114"/>
+	</item>
+	<item id="NodeList/MySQLUser">
+		<column name="User name" visible="true" order="0" width="109"/>
+		<column name="Host mask" visible="true" order="1" width="70"/>
+		<column name="SSL type" visible="true" order="2" width="58"/>
+		<column name="SSL cipher" visible="true" order="3" width="68"/>
+		<column name="Max questions" visible="true" order="4" width="91"/>
+		<column name="Max updates" visible="true" order="5" width="82"/>
+		<column name="Max connections" visible="true" order="6" width="105"/>
+		<column name="Max user connections" visible="true" order="7" width="130"/>
+	</item>
+	<item id="NodeList/MySQLView">
+		<column name="View Name" visible="true" order="0" width="100"/>
+		<column name="Check Option" visible="true" order="1" width="100"/>
+		<column name="Updatable" visible="true" order="2" width="100"/>
+		<column name="Definer" visible="true" order="3" width="100"/>
+		<column name="Algorithm" visible="true" order="4" width="100"/>
+	</item>
+	<item id="SchemaSelector">
+		<column name="Schema Name" visible="true" order="0" width="103"/>
+		<column name="Default Charset" visible="true" order="1" width="95"/>
+		<column name="Default Collation" visible="true" order="2" width="124"/>
+		<column name="SQL Path" visible="true" order="3" width="62"/>
+		<column name="Database size" visible="true" order="4" width="84"/>
+	</item>
+	<item id="scriptSelectorViewer">
+		<column name="Script" visible="true" order="0" width="111"/>
+		<column name="Time" visible="true" order="1" width="133"/>
+		<column name="Info" visible="true" order="2" width="1600"/>
+	</item>
+</items>

@@ -1,0 +1,55 @@
+create table customer (
+	ID int ,
+	nAme VARCHAR(100),
+	phone varchar(100),
+	merchant_id int
+)
+alter table customer 
+add primary key(ID);
+create table merchant (
+	id int, 
+	name varchar(1000)
+)
+alter table merchant 
+add primary key(id);
+
+alter table customer 
+add foreign key(merchant_id) REFERENCES merchant(id);
+
+insert into customer(id, name, merchant_id) values(1231234, 'Nguyễn Thị A', 3322);
+
+insert into customer values(1231236, 'Vũ văn B', '123449',3323)
+
+insert into merchant values(3322, 'Phùng A')
+
+insert into merchant values(3323, 'Đai Lý B')
+insert into merchant values(2234, 'Đai Lý C')
+
+
+insert into customer(id, phone, merchant_id) values(1231236, '09063424', '2233')
+
+insert into customer values(1231235, 'Trân Văn C', '223455', 2234)
+
+insert into customer(id, name, phone, merchant_id) values(1231237, 'Vũ Thị E', '345345', 3323)
+
+insert into customer(id, name, phone, merchant_id) values(1231238, 'Trân Văn C', '223455', 3323)
+
+insert into customer(id, name, phone, merchant_id) values(1231240, 'Trân Văn H', '223455', 2234)
+
+update customer set phone='093324' where ID = 1231234;
+select * from customer c ;
+select * from merchant m ;
+select name from customer c where merchant_id =3323;
+select name,ID from customer c where merchant_id >3322 and merchant_id <3330;
+select * from customer c where  merchant_id = 3323;
+update customer set merchant_id = 3323 where ID = 1231240 ; 
+select * from customer c order by merchant_id,nAme ;
+select * from customer c order by merchant_id desc ,nAme desc ;
+select sum(merchant_id),nAme from customer c group by merchant_id ;
+select * from customer c group by merchant_id ;
+select distinct phone from customer c order by merchant_id ;
+select distinct merchant_id from customer c where merchant_id > 3000;
+
+select c.ID ,c.nAme ,c.phone ,m.id from customer c left join merchant m on c.ID =m.id ;
+
+select c.nAme,c.phone from customer c where 3<=(select count(*) from customer c2 where c.merchant_id=c2.merchant_id);
